@@ -5,21 +5,24 @@
 	<groupId>dev.arielalvesdutra</groupId>
 	<artifactId>praticas</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.1.0-SNAPSHOT</version>
 	<name>praticas Maven Webapp</name>
 	<url>http://maven.apache.org</url>
+	<properties>
+		<failOnMissingWebXml>false</failOnMissingWebXml>
+	</properties>
 	<dependencies>
 
-		<!-- Servlet API -->
+		<!-- SERVLET API -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
-		<!-- FIM Servlet API -->
+		<!-- FIM SERVLET API -->
 
-		<!-- Spring -->
+		<!-- SPRING -->
 
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -33,54 +36,95 @@
 			<version>4.3.17.RELEASE</version>
 		</dependency>
 
-		<!-- Fim Spring -->
+		<!-- FIM SPRING -->
 
-		<!-- JUnit -->
+		<!-- JUNIT -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-		<!-- Fim JUnit -->
+		<!-- FIM JUNIT -->
 
-		<!-- jsp -->
+		<!-- JSP & JSTL -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.1</version>
+			<scope>provided</scope>
+		</dependency>
 
-		<!-- fim jsp -->
+		<dependency>
+			<groupId>javax.servlet.jsp.jstl</groupId>
+			<artifactId>jstl-api</artifactId>
+			<version>1.2</version>
+			<exclusions>
+				<exclusion>
+					<groupId>javax.servlet</groupId>
+					<artifactId>servlet-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
 
-		<!-- tomcat -->
+		<dependency>
+			<groupId>org.glassfish.web</groupId>
+			<artifactId>jstl-impl</artifactId>
+			<version>1.2</version>
+			<exclusions>
+				<exclusion>
+					<groupId>javax.servlet</groupId>
+					<artifactId>servlet-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- FIM JSP & JSTL -->
+
+		<!-- TOMCAT -->
 		<dependency>
 			<groupId>org.apache.tomcat</groupId>
 			<artifactId>tomcat-servlet-api</artifactId>
 			<version>7.0.47</version>
 			<scope>provided</scope>
 		</dependency>
-		<!-- fim tomcat -->
+		<!-- FIM TOMCAT -->
 
-
+		<!-- SLF4J -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 			<version>1.6.1</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>jcl-over-slf4j</artifactId>
 			<version>1.6.1</version>
 			<scope>runtime</scope>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>1.6.1</version>
 			<scope>runtime</scope>
 		</dependency>
+		
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.16</version>
 			<scope>runtime</scope>
 		</dependency>
+		<!-- FIM SLF4J -->
+
 	</dependencies>
 	<build>
 		<finalName>praticas</finalName>

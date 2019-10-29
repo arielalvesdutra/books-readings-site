@@ -1,0 +1,124 @@
+body {
+	font-family: sans-serif;
+}
+
+strong, h1 {
+	font-weight: bold;
+}
+
+.header {
+	padding: 25px 0px 15px 0px;
+	display: flex;
+	justify-content: space-around;
+	font-size: 5.5rem;
+}
+
+.header__logarButton {
+	font-size: 3.5rem;
+	padding: 10px 25px;
+	background: #e0e0e0;
+	color: #b37949;
+	border: none;
+	border-radius: 8px;
+	color: white;
+	background: #d39b6d;
+}
+
+.section__principal {
+	min-height: 300px;
+	padding: 60px 20px 90px 20px;
+	background: #b37949;
+	color: white;
+}
+
+.section__principal h1 {
+	font-size: 5.5rem;
+	margin-bottom: 35px;
+}
+
+.section__principal h2 {
+	font-size: 3.5rem;
+	margin-bottom: 10px;
+}
+
+.section__cadastrarLeituraLivro {
+	padding: 60px 20px 25px 20px;
+	background: #b3855f;
+	color: white;
+	min-height: 200px;
+}
+
+.section__cadastrarLeituraLivro__descricao {
+	
+	padding: 120px 40px 0px 20px;
+	font-size: 1.4rem;
+}
+
+.section__cadastrarLeituraLivro h3 {
+	font-size: 3.4rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.section__cadastrarLivro {
+	padding: 60px 20px 25px 20px;
+	min-height: 200px;
+}
+
+.section__cadastrarLivro__descricao {
+	padding: 120px 40px 0px 20px;
+	font-size: 1.4rem;
+	color: #b37949;
+}
+
+.section__cadastrarLivro h3 {
+	font-size: 3.4rem;
+	font-weight: bold;
+	text-align: center;
+	color: #b37949;
+}
+
+.section__cadastrarAutor {
+	background: #d39b6d;
+	padding: 60px 20px 25px 20px;
+	color: white;
+	min-height: 200px;
+}
+
+.section__cadastrarAutor__descricao {
+	padding: 120px 40px 0px 20px;
+	font-size: 1.4rem;
+	color: #b37949;
+	color: white;
+}
+
+.section__cadastrarAutor h3 {
+	font-size: 3.4rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.section__cadastrarComentario {
+	background: #b3855f;
+	padding: 60px 20px 25px 20px;
+	color: white;
+	min-height: 200px;
+}
+
+.section__cadastrarComentario__descricao {
+	padding: 120px 40px 0px 20px;
+	font-size: 1.4rem;
+	color: #b37949;
+	color: white;
+}
+
+.section__cadastrarComentario h3 {
+	font-size: 3.4rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.footer {
+	padding: 40px 20px 70px 20px;
+	color: #b37949;
+}

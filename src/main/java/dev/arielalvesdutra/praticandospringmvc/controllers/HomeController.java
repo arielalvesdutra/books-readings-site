@@ -8,20 +8,14 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HomeController {
 	
-	@ResponseBody
 	@RequestMapping("/")
-	public String index() {
-		return "Página inicial";
-	}
+	public ModelAndView index() {
+		return new ModelAndView("index");
+	}	
 	
 	@ResponseBody
 	@RequestMapping("/about")
 	public String about() {
 		return "Página sobre";
-	}
-	
-	@RequestMapping("/first")
-	public ModelAndView first() {
-		return new ModelAndView("index");
-	}
+	}	
 }
