@@ -1,5 +1,9 @@
+html, body {
+	font-size: 1rem;
+}
+
 body {
-	font-family: sans-serif;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 strong, h1 {
@@ -10,115 +14,276 @@ strong, h1 {
 	padding: 25px 0px 15px 0px;
 	display: flex;
 	justify-content: space-around;
-	font-size: 5.5rem;
+	align-items: center;
+	font-size: 4.0rem;
+}
+
+.header__logo {
+	background-image: url('/praticas/resources/imgs/book.svg');
+	background-repeat: no-repeat;
+	display: block;
+	width: 80px;
+	height: 80px;
+	background-size: 100% 100%;
 }
 
 .header__logarButton {
-	font-size: 3.5rem;
-	padding: 10px 25px;
-	background: #e0e0e0;
-	color: #b37949;
+	cursor: pointer;
+	font-size: 2.2rem;
+	padding: 5px 20px;
 	border: none;
 	border-radius: 8px;
 	color: white;
 	background: #d39b6d;
+	transition: background 0.5s, top 0.5s;
+	
+	top: 0;
+	position:relative;
+}
+
+.header__logarButton:active {
+	background: #b3855f;
+	top: 3px;
+}
+
+.header__logarButton:focus {
+	outline: none;
+	border: none;
 }
 
 .section__principal {
-	min-height: 300px;
-	padding: 60px 20px 90px 20px;
+	min-height: 100px;
+	padding: 60px 20px 40px 20px;
 	background: #b37949;
 	color: white;
 }
 
 .section__principal h1 {
-	font-size: 5.5rem;
+	font-size: 3.5rem;
 	margin-bottom: 35px;
 }
 
 .section__principal h2 {
-	font-size: 3.5rem;
+	font-size: 2.0rem;
 	margin-bottom: 10px;
+}
+
+.section__principal__comprarButtonArea {
+	margin: 50px 0 0 0;
+	text-align: center;
+}
+
+.section__principal__comprarButton {
+	cursor: pointer;
+	font-size: 1.8rem;
+	padding: 10px 70px;
+	border: 4px solid #6e3e17;
+	background: #6e3e17;
+	color: white;
+	border-radius: 12px;
+	position: relative;
+	top: 0;
+	transition: top 0.5s;
+}
+.section__principal__comprarButton:active {
+	opacity: 0.8;
+	top: 3px;
+}
+
+.section__principal__comprarButton:focus {
+	outline: none;
 }
 
 .section__cadastrarLeituraLivro {
 	padding: 60px 20px 25px 20px;
-	background: #b3855f;
-	color: white;
+	color: #b3855f;
+	background: white;
 	min-height: 200px;
 }
 
-.section__cadastrarLeituraLivro__descricao {
-	
-	padding: 120px 40px 0px 20px;
-	font-size: 1.4rem;
-}
-
 .section__cadastrarLeituraLivro h3 {
-	font-size: 3.4rem;
+	font-size: 2.3rem;
 	font-weight: bold;
 	text-align: center;
 }
+
+.section__cadastrarLeituraLivro__iconArea {
+	display: flex;
+	justify-content: center;
+	padding: 50px 0 0 0;
+}
+
+.section__cadastrarLeituraLivro__icon {
+	background-image: url('/praticas/resources/imgs/reading.svg');
+	background-repeat: no-repeat;
+	display: block;
+	width: 100px;
+	height: 100px;
+	background-size: 90%;
+	background-position: center;
+	border-radius: 50%;
+	padding: 25px;
+	border: 5px solid #b3855f;
+	background-color: #b3855f;
+}
+
+.section__cadastrarLeituraLivro__descricao {
+	padding: 50px 40px 0px 20px;
+	font-size: 1.4rem;
+}
+
 
 .section__cadastrarLivro {
 	padding: 60px 20px 25px 20px;
 	min-height: 200px;
-}
-
-.section__cadastrarLivro__descricao {
-	padding: 120px 40px 0px 20px;
-	font-size: 1.4rem;
-	color: #b37949;
+	background: #b3855f;
+	color: white;
 }
 
 .section__cadastrarLivro h3 {
-	font-size: 3.4rem;
+	font-size: 2.3rem;
 	font-weight: bold;
 	text-align: center;
-	color: #b37949;
 }
+
+.section__cadastrarLivro__iconArea {
+	display: flex;
+	justify-content: center;
+	padding: 50px 0 0 0;
+}
+
+.section__cadastrarLivro__icon {
+	background-image: url('/praticas/resources/imgs/books.svg');
+	background-repeat: no-repeat;
+	display: block;
+	width: 100px;
+	height: 100px;
+	background-size: 80%;
+	background-position: center;
+	border-radius: 50%;
+	padding: 25px;
+	border: 5px solid white;
+	background-color: white;
+}
+
+.section__cadastrarLivro__descricao {
+	padding: 50px 40px 0px 20px;
+	font-size: 1.4rem;
+}
+
 
 .section__cadastrarAutor {
-	background: #d39b6d;
 	padding: 60px 20px 25px 20px;
-	color: white;
+	background: white;
+	color: #d39b6d;
 	min-height: 200px;
-}
-
-.section__cadastrarAutor__descricao {
-	padding: 120px 40px 0px 20px;
-	font-size: 1.4rem;
-	color: #b37949;
-	color: white;
 }
 
 .section__cadastrarAutor h3 {
-	font-size: 3.4rem;
+	font-size: 2.3rem;
 	font-weight: bold;
 	text-align: center;
 }
 
+.section__cadastrarAutor__iconArea {
+	display: flex;
+	justify-content: center;
+	padding: 50px 0 0 0;
+}
+
+.section__cadastrarAutor__icon {
+	color: white;
+	background-image: url('/praticas/resources/imgs/authors.svg');
+	background-repeat: no-repeat;
+	display: block;
+	width: 100px;
+	height: 100px;
+	background-size: 80%;
+	background-position: center;
+	border-radius: 50%;
+	padding: 25px;
+	border: 5px solid #d39b6d;
+	background-color: #d39b6d;
+}
+.section__cadastrarAutor__icon svg {
+	fill: #ffffff;
+}
+
+.section__cadastrarAutor__descricao {
+	padding: 50px 40px 0px 20px;
+	font-size: 1.4rem;	
+}
+
 .section__cadastrarComentario {
-	background: #b3855f;
-	padding: 60px 20px 25px 20px;
+	padding: 60px 20px 25px 20px;	
+	background: #d39b6d;
 	color: white;
 	min-height: 200px;
 }
 
+.section__cadastrarComentario h3 {
+	font-size: 2.3rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.section__cadastrarComentario__iconArea {
+	display: flex;
+	justify-content: center;
+	padding: 50px 0 0 0;
+}
+
+.section__cadastrarComentario__icon {
+	background-image: url('/praticas/resources/imgs/comments.svg');
+	background-repeat: no-repeat;
+	display: block;
+	width: 100px;
+	height: 100px;
+	background-size: 72%;
+	background-position: center;
+	border-radius: 50%;
+	padding: 25px;
+	border: 5px solid white;
+	background-color: white;
+}
+
 .section__cadastrarComentario__descricao {
-	padding: 120px 40px 0px 20px;
+	padding: 50px 40px 0px 20px;
 	font-size: 1.4rem;
 	color: #b37949;
 	color: white;
 }
 
-.section__cadastrarComentario h3 {
-	font-size: 3.4rem;
+.footer {
+	padding: 80px 20px 30px 20px;
+	color: #b37949;
+	flex-direction: column;
+
+}
+.footer h3 {
 	font-weight: bold;
-	text-align: center;
+	font-size: 1.4rem;
+	text-align:center;
+	margin-bottom: 25px;
 }
 
-.footer {
-	padding: 40px 20px 70px 20px;
+.footer, .footer ul {
+	justify-content: center;
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
+}
+.footer a {
 	color: #b37949;
 }
+
+.footer a:hover {
+	opacity: 0.8;
+}
+
+.footer ul li {
+	text-align: center;
+	padding: 5px 7px;
+	margin-bottom: 5px;
+}
+

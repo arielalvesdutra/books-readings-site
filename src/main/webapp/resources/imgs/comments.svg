@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+style="fill:#d39b6d;"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 65 62"
+   x="0px"
+   y="0px"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="noun_comment_1130744 (cópia).svg"
+   width="65"
+   height="62">
+  <metadata
+     id="metadata26">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Ресурс 49</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs24" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1031"
+     id="namedview22"
+     showgrid="false"
+     inkscape:zoom="5.6568543"
+     inkscape:cx="-24.67053"
+     inkscape:cy="53.451902"
+     inkscape:window-x="1440"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <title
+     id="title4">Ресурс 49</title>
+  <g
+     id="g4227"
+     transform="translate(0.51700075,4.2349976)">
+    <g
+       transform="translate(5.6149985,6.782097)"
+       id="g6"
+       data-name="Слой 2">
+      <rect
+         x="7.8800001"
+         y="8.25"
+         width="33"
+         height="2.27"
+         id="rect10" />
+      <rect
+         x="7.8800001"
+         y="15.75"
+         width="33"
+         height="2.27"
+         id="rect12" />
+      <rect
+         x="7.8800001"
+         y="23.25"
+         width="33"
+         height="2.27"
+         id="rect14" />
+      <path
+         d="m 12.75,44.1 0,-10.33 L 0,33.77 0,0 l 48.77,0 0,33.77 -24,0 z M 2.27,31.5 l 12.73,0 0,7.67 9,-7.67 22.5,0 0,-29.23 -44.23,0 z"
+         id="path16"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g4221">
+      <path
+         style="fill:#d39b6d;fill-rule:evenodd;stroke:#d39b6d;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 10.58,7.6110135 0,-4.4192301"
+         id="path3395"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#d39b6d;fill-rule:evenodd;stroke:#d39b6d;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 57.351,2.720058 0,33.769942"
+         id="path3399"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#d39b6d;fill-rule:evenodd;stroke:#d39b6d;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 9.580451,3.6479078 48.77,0"
+         id="path3401"
+         inkscape:connector-curvature="0" />
+      <path
+      
+         style="fill:#d39b6d;fill-rule:evenodd;stroke:#d39b6d;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 57.783912,35.489 -4.757616,0"
+         id="path3403"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>
