@@ -6,39 +6,46 @@ body {
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+button {
+	background: none;
+	cursor: pointer;
+	border: none;
+}
+
+button:focus {
+	outline: none;
+}
+
 strong, h1 {
 	font-weight: bold;
 }
 
 .header {
-	padding: 25px 0px 15px 0px;
-	display: flex;
-	justify-content: space-around;
 	align-items: center;
+	display: flex;
 	font-size: 4.0rem;
+	justify-content: space-around;
+	padding: 25px 0px 15px 0px;
 }
 
 .header__logo {
-	background-image: url('/praticas/resources/imgs/book.svg');
+	background-image: url('/books-readings-site/resources/imgs/book.svg');
 	background-repeat: no-repeat;
+	background-size: 100%;
 	display: block;
-	width: 80px;
 	height: 80px;
-	background-size: 100% 100%;
+	width: 80px;
 }
 
 .header__logarButton {
-	cursor: pointer;
-	font-size: 2.2rem;
-	padding: 5px 20px;
-	border: none;
-	border-radius: 8px;
-	color: white;
 	background: #d39b6d;
-	transition: background 0.5s, top 0.5s;
-	
-	top: 0;
+	border-radius: 8px;	
+	color: white;
+	font-size: 1.6rem;
+	padding: 10px 20px;
 	position:relative;
+	top: 0;
+	transition: top 0.5s;	
 }
 
 .header__logarButton:active {
@@ -46,16 +53,12 @@ strong, h1 {
 	top: 3px;
 }
 
-.header__logarButton:focus {
-	outline: none;
-	border: none;
-}
-
 .section__principal {
-	min-height: 100px;
-	padding: 60px 20px 40px 20px;
 	background: #b37949;
 	color: white;
+	display: flex;
+	flex-direction: column;
+	padding: 60px 20px 40px 20px;
 }
 
 .section__principal h1 {
@@ -68,198 +71,43 @@ strong, h1 {
 	margin-bottom: 10px;
 }
 
+.section__principal__descricao {
+	font-size: 1.1rem;
+	padding: 20px 10px 0 0;
+}
+
 .section__principal__comprarButtonArea {
-	margin: 50px 0 0 0;
+	margin: 40px 0 0 0;
 	text-align: center;
 }
 
-.section__principal__comprarButton {
-	cursor: pointer;
-	font-size: 1.8rem;
-	padding: 10px 70px;
-	border: 4px solid #6e3e17;
+.section__principal__comprarButton {	
 	background: #6e3e17;
-	color: white;
 	border-radius: 12px;
+	font-weight: 400;	
+	color: white;
+	font-size: 1.6rem;
+	padding: 12px 70px;
 	position: relative;
 	top: 0;
 	transition: top 0.5s;
 }
+
+.section__principal__comprarButton:hover  {
+	opacity: 0.9;
+}
+
 .section__principal__comprarButton:active {
+	background: #6e3e20;
 	opacity: 0.8;
 	top: 3px;
-}
-
-.section__principal__comprarButton:focus {
-	outline: none;
-}
-
-.section__cadastrarLeituraLivro {
-	padding: 60px 20px 25px 20px;
-	color: #b3855f;
-	background: white;
-	min-height: 200px;
-}
-
-.section__cadastrarLeituraLivro h3 {
-	font-size: 2.3rem;
-	font-weight: bold;
-	text-align: center;
-}
-
-.section__cadastrarLeituraLivro__iconArea {
-	display: flex;
-	justify-content: center;
-	padding: 50px 0 0 0;
-}
-
-.section__cadastrarLeituraLivro__icon {
-	background-image: url('/praticas/resources/imgs/reading.svg');
-	background-repeat: no-repeat;
-	display: block;
-	width: 100px;
-	height: 100px;
-	background-size: 90%;
-	background-position: center;
-	border-radius: 50%;
-	padding: 25px;
-	border: 5px solid #b3855f;
-	background-color: #b3855f;
-}
-
-.section__cadastrarLeituraLivro__descricao {
-	padding: 50px 40px 0px 20px;
-	font-size: 1.4rem;
-}
-
-
-.section__cadastrarLivro {
-	padding: 60px 20px 25px 20px;
-	min-height: 200px;
-	background: #b3855f;
-	color: white;
-}
-
-.section__cadastrarLivro h3 {
-	font-size: 2.3rem;
-	font-weight: bold;
-	text-align: center;
-}
-
-.section__cadastrarLivro__iconArea {
-	display: flex;
-	justify-content: center;
-	padding: 50px 0 0 0;
-}
-
-.section__cadastrarLivro__icon {
-	background-image: url('/praticas/resources/imgs/books.svg');
-	background-repeat: no-repeat;
-	display: block;
-	width: 100px;
-	height: 100px;
-	background-size: 80%;
-	background-position: center;
-	border-radius: 50%;
-	padding: 25px;
-	border: 5px solid white;
-	background-color: white;
-}
-
-.section__cadastrarLivro__descricao {
-	padding: 50px 40px 0px 20px;
-	font-size: 1.4rem;
-}
-
-
-.section__cadastrarAutor {
-	padding: 60px 20px 25px 20px;
-	background: white;
-	color: #d39b6d;
-	min-height: 200px;
-}
-
-.section__cadastrarAutor h3 {
-	font-size: 2.3rem;
-	font-weight: bold;
-	text-align: center;
-}
-
-.section__cadastrarAutor__iconArea {
-	display: flex;
-	justify-content: center;
-	padding: 50px 0 0 0;
-}
-
-.section__cadastrarAutor__icon {
-	color: white;
-	background-image: url('/praticas/resources/imgs/authors.svg');
-	background-repeat: no-repeat;
-	display: block;
-	width: 100px;
-	height: 100px;
-	background-size: 80%;
-	background-position: center;
-	border-radius: 50%;
-	padding: 25px;
-	border: 5px solid #d39b6d;
-	background-color: #d39b6d;
-}
-.section__cadastrarAutor__icon svg {
-	fill: #ffffff;
-}
-
-.section__cadastrarAutor__descricao {
-	padding: 50px 40px 0px 20px;
-	font-size: 1.4rem;	
-}
-
-.section__cadastrarComentario {
-	padding: 60px 20px 25px 20px;	
-	background: #d39b6d;
-	color: white;
-	min-height: 200px;
-}
-
-.section__cadastrarComentario h3 {
-	font-size: 2.3rem;
-	font-weight: bold;
-	text-align: center;
-}
-
-.section__cadastrarComentario__iconArea {
-	display: flex;
-	justify-content: center;
-	padding: 50px 0 0 0;
-}
-
-.section__cadastrarComentario__icon {
-	background-image: url('/praticas/resources/imgs/comments.svg');
-	background-repeat: no-repeat;
-	display: block;
-	width: 100px;
-	height: 100px;
-	background-size: 72%;
-	background-position: center;
-	border-radius: 50%;
-	padding: 25px;
-	border: 5px solid white;
-	background-color: white;
-}
-
-.section__cadastrarComentario__descricao {
-	padding: 50px 40px 0px 20px;
-	font-size: 1.4rem;
-	color: #b37949;
-	color: white;
 }
 
 .footer {
 	padding: 80px 20px 30px 20px;
 	color: #b37949;
-	flex-direction: column;
-
 }
+
 .footer h3 {
 	font-weight: bold;
 	font-size: 1.4rem;
@@ -267,12 +115,13 @@ strong, h1 {
 	margin-bottom: 25px;
 }
 
-.footer, .footer ul {
-	justify-content: center;
-	flex-wrap: wrap;
+.footer, .footer__listaContatos {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
 }
+
 .footer a {
 	color: #b37949;
 }
@@ -281,9 +130,131 @@ strong, h1 {
 	opacity: 0.8;
 }
 
-.footer ul li {
+.footer__listaContatos li {
 	text-align: center;
 	padding: 5px 7px;
 	margin-bottom: 5px;
 }
 
+.section__leituraLivro h3,
+.section__livro h3,
+.section__autor h3,
+.section__comentario h3 {
+	font-size: 2.3rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.section__leituraLivro__descricao,
+.section__livro__descricao,
+.section__autor__descricao,
+.section__comentario__descricao {
+	padding: 50px 40px 0px 20px;
+	font-size: 1.4rem;
+}
+
+.section__leituraLivro__icon,
+.section__livro__icon,
+.section__autor__icon,
+.section__comentario__icon {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 25px;
+}
+
+.section__leituraLivro__icon {
+	background-color: #b3855f;
+	background-image: url('/books-readings-site/resources/imgs/reading.svg');
+	background-size: 90%;
+	border: 5px solid #b3855f;
+}
+
+.section__livro__icon {
+	background-color: white;
+	background-image: url('/books-readings-site/resources/imgs/books.svg');
+	background-size: 80%;
+	border: 5px solid white;
+}
+
+.section__autor__icon {
+	background-color: #d39b6d;
+	background-image: url('/books-readings-site/resources/imgs/authors.svg');
+	background-size: 80%;
+	border: 5px solid #d39b6d;
+}
+
+.section__comentario__icon {
+	background-color: white;
+	background-image: url('/books-readings-site/resources/imgs/comments.svg');
+	background-size: 72%;
+	border: 5px solid white;
+}
+
+.section__leituraLivro__iconArea,
+.section__livro__iconArea,
+.section__autor__iconArea,
+.section__comentario__iconArea {
+	display: flex;
+	justify-content: center;
+	padding: 50px 0 0 0;
+}
+
+.section__leituraLivro,
+.section__livro,
+.section__autor,
+.section__comentario {
+	display: flex;
+	flex-direction: column;
+	min-height: 200px;
+	padding: 60px 20px 25px 20px;
+}
+
+.section__leituraLivro {
+	background: white;
+	color: #b3855f;
+}
+
+.section__livro {
+	background: #b3855f;
+	color: white;
+}
+
+.section__autor {
+	background: white;
+	color: #d39b6d;
+}
+
+.section__comentario {
+	background: #d39b6d;
+	color: white;
+}
+
+@media(min-width: 980px) {
+	
+	.section__principal h1,
+	.section__principal h2,
+	.section__principal__descricao,
+	.section__autor__descricao,
+	.section__livro__descricao,
+	.section__leituraLivro__descricao,
+	.section__comentario__descricao {
+		width: 900px;
+	}
+	
+	.section__principal,
+	.section__autor,
+	.section__livro,
+	.section__leituraLivro,
+	.section__comentario{
+		align-items: center;
+	}
+}
+
+@media(min-width: 1140px) {
+	.section__principal h1 {
+		font-size: 4.0rem;
+	}
+}

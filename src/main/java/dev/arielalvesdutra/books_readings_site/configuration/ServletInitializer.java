@@ -1,4 +1,4 @@
-package dev.arielalvesdutra.praticandospringmvc.configuration;
+package dev.arielalvesdutra.books_readings_site.configuration;
 
 import javax.servlet.MultipartConfigElement;
 import javax.servlet.ServletRegistration.Dynamic;
