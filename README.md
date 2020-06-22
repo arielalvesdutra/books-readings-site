@@ -1,32 +1,32 @@
-## Descrição
+## Description
 
-Aplicação desenvolvida com Spring MVC 4 com JSP e JSTL para uma página de apresentação sobre um produto fictício. A principal intenção é praticar.
+Application developed with Spring MVC 4, JSP and JSQL for one page that presents a fictitious product. The main goal is to practice.
 
-A tela foi desenvolvida com Mobile First.
+The layout was developed with Mobile First.
 
-Os textos utilizados para preencher a tela foram elaborados da forma mais básica possível, sem nenhum compromisso de serem relevantes, coesos, etc.
+The texts that were used on the page were elabareted in a very basic way.
 
-Eu não quis utilizar fotos. Apenas os ícones.
+I didn't want to use photos. Only icons.
 
-## Tela
+## Screen
 
 ![association graph](src/main/resources/imgs/print-da-tela.png)
 
-## Ambiente
+## Environment
 
-**Servidores testados**: Tomcat 7, Tomcat 8.0,  Tomcat 8.5
+**Tested servers**: Tomcat 7, Tomcat 8.0,  Tomcat 8.5
 
 **JRE**: Java 8
 
-**Gerenciar de Dependências**: Maven
+**Dependency Management**: Maven
 
 ## Deploy
 
-1. Exportar o projeto para um arquivo `.war`
-2. Colocar o arquivo `.war` exportado na pasta `webapps` do Tomcat
-3. Iniciar o Tomcat
-4. Acessar o endereço do servidor tomcat com o mesmo nome do arquivo - http://servidor/nome-da-aplicacao
+1. Export the project to a `.war` file
+2. Put the `.war` file in Tomcat's `webapps` folder
+3. Start Tomcat
+4. Go in your web browser to the server address with the file name - http://server/file-name
 
-## Fontes dos icones
+## Icon fonts
 
-As fontes dos ícones foram extraídas do site [The Noun Project](https://thenounproject.com/).
+The icon fonts source is the site [The Noun Project](https://thenounproject.com/).
